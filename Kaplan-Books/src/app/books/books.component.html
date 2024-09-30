@@ -1,0 +1,32 @@
+<div class="container">
+    <img>
+    <div class="header">
+        <h2>Books</h2>
+        <button type="button" class="btn btn-primary buttonSize">Create New Book</button>
+    </div>
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label for="search">Search</mat-label>
+            <input matInput [formControl]="searchInput" (keypress)="filterBooks()">
+            <mat-icon matPrefix>search</mat-icon>
+        </mat-form-field>
+    </form>
+    <h4>All Books</h4>
+    <div class="books-container">
+        
+        <span class="book-detail" *ngFor="let book of volumeInfo1">
+            <ul type="none">
+                <h6>{{ book.title }}</h6>  
+                <li>
+                    Authors : {{ book.authors }}
+                </li>
+                <li>
+                    Publisher : {{ book.publisher }}
+                </li>
+                <li>
+                    Published Date : {{ book.publishedDate }}
+                </li>
+            </ul>
+        </span>
+    </div>
+</div>

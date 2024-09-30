@@ -1,0 +1,42 @@
+.container {
+    background-color: aliceblue;
+    margin-bottom: 5%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(152, 167, 98); */
+}
+
+.buttonSize {
+    width: 20%;
+    height: 50%;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+  
+.example-full-width {
+    width: 100%;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: DodgerBlue; */
+    gap: 20px;
+}
+
+.book-detail {
+    background-color: rgb(231, 237, 240);
+    width: 48%;
+    height: 10rem;
+    border-left: 5px solid rgb(179, 117, 25);
+    border-radius: 3px;
+    box-shadow:  0 5px 5px rgba(0, 0, 0, 0.5);
+}
